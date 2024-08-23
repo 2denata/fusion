@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(fotoStudio.jpg) center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.table__header {
+    width: 100%;
+    height: 10%;
+    background-color:#fff4;
+    padding: .8rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.buttonBooking{
+    margin-left: auto;
+}
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th:hover {
+    color:#ff512f;
+}
+.btnn{ 
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 5px;
+    border-radius:15px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    text-align: center;
+}
+.btnn:hover {
+    background:linear-gradient(to right,
+    #ff512f,
+    #f09819);
+  }
+  .btnn{
+    color: white;
+    border: 2px solid
+  }
+  .btnnBooking{
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        width: 100px;
+        padding: 5px;
+        border-radius:15px;
+        transition: 0.5s ease;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 580px;
+    }
+    .btnnBooking:hover {
+        background:linear-gradient(to right,
+        #ff512f,
+        #f09819);
+      }
+      .btnnBooking{
+        color: white;
+        border: 2px solid
+      }
+  
+
+/* .btn {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    border-radius:10px;
+    transition: 0.2s ease;
+    text-decoration: none;
+  }
+  .btn:hover {
+    color: white;
+  }
+  .btn{
+    color: #ff512f;
+    border: 2px solid#ff512f
+  }
+  .btn:hover {
+    background: #ff512f;
+  } */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* CSS Checkbox */
+  .wrapper{
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+  }
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 2em;
+    width: 2em;
+    background-color: #a5a5a5;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 1.5em;
+    color:#ffffff;
+    display: none;
+}
+input[type="checkbox"]:hover{
+    background:linear-gradient(to right,
+    #ff512f,
+    #f09819);
+
+}
+input[type="checkbox"]:checked{
+background: linear-gradient(to right,
+#ff512f,
+#f09819);
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+/* --------Batas CSS Checkbox-----------*/
+  
