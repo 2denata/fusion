@@ -1,62 +1,33 @@
-# CodeIgniter 4 Application Starter
 
-## What is CodeIgniter?
+![](https://img.shields.io/badge/PHP-purple?style=for-the-badge&logo=php) ![](https://img.shields.io/badge/Bootstrap-blue?style=for-the-badge&logo=Bootstrap) ![](https://img.shields.io/badge/Javascript-grey?style=for-the-badge&logo=javascript) 
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+# Introduction
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+![logo](https://github.com/user-attachments/assets/f479f7a3-9b1f-43b9-979b-807ee95e8bf1)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+Welcome to Fusion, the practical solution to managing your music studio with ease. Fusion is designed to make it easy for you to organize schedules, book rooms, and rent out musical instruments-all in one place!
 
-## Installation & updates
+No more hassle with manual notes or headache-inducing spreadsheets. Fusion helps you keep everything organized, so you can focus on what really matters-music!
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Whether you manage a small studio or multiple rooms, Fusion is here to help. Make your studio operations simpler and more efficient with Fusion!
+# Features 
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+- Booking a studio room
+- Booking musical instruments
+- Display the studio room rental schedule
+- Displaying musical instrument rental schedule
+- Manage booking menu (for admin)
 
-## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
 
-## Important Change with index.php
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+# Galery
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+![image](https://github.com/user-attachments/assets/7c958c53-e44c-4192-8653-8b1c56145747)
 
-**Please** read the user guide for a better explanation of how CI4 works!
+![image](https://github.com/user-attachments/assets/a7b075c6-31d4-4d30-98ef-e63fba0fe4f4)
 
-## Repository Management
+![image](https://github.com/user-attachments/assets/35544106-6f20-4543-8dc4-577009ea61ba)
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+![image](https://github.com/user-attachments/assets/30f488b3-bf54-4a05-9d8e-d7516a980d41)
