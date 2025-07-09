@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fusion | Booking Studio</title>
+  <link rel="stylesheet" href="css/styleHalaman.css" />
+</head>
+
+<body>
+  <main class="table">
+    <section class="table__header">
+      <h1>Booking Ruangan Studio</h1>
+      <a href="home.html" class="btnn">Kembali</a>
+    </section>
+
+    <div class="body2">
+      <div class="container">
+        <form id="demoBookingForm" enctype="multipart/form-data">
+          <input type="hidden" name="email" value="user@example.com" />
+          <input type="hidden" name="studio" value="A" />
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Nama</span>
+              <input type="text" name="nama" value="John Doe" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Studio</span>
+              <input type="text" name="studio1" value="Studio A" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Tanggal Pakai Studio</span>
+              <input type="text" name="tgl_pakai" value="2025-07-10" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Durasi</span>
+              <input type="text" name="durasi" value="2 jam" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Jam Pakai Studio</span>
+              <input type="text" name="jam_pakai" value="15.00-17.00" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Total Harga</span>
+              <input type="text" name="total_harga" value="Rp100.000" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Bukti Pembayaran</span>
+              <input type="file" name="bukti_pembayaran" accept="image/*" required />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Qris Studio</span>
+              <p></p>
+              <img src="img/qris.jpg" alt="Qris" style="width: 300px; justify-content: center;" />
+            </div>
+          </div>
+
+          <div class="button">
+            <input onclick="window.location.href='suksesBooking.html'" type="submit" value="Booking" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

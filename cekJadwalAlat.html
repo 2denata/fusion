@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fusion | Jadwal Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <form id="formBooking">
+    <main class="table">
+      <input type="hidden" name="bulan" value="7" />
+      <input type="hidden" name="tahun" value="2025" />
+      <input type="hidden" name="kodeAlat" value="GT001" />
+      <input type="hidden" name="jenisAlat" value="Gitar" />
+      <input type="hidden" name="namaAlat" value="Yamaha Acoustic" />
+      <input type="hidden" name="hargaAwal" value="75000" />
+
+      <section class="table__header">
+        <h1>Jadwal Juli</h1>
+        <a class="btnnBooking" id="submitLink" style="cursor: pointer;">Booking</a>
+        <a href="home.html" class="btnn">Kembali</a>
+      </section>
+
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th>Tanggal</th>
+              <th>Status</th>
+              <th>Penyewa</th>
+              <th>Booking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dummy data untuk 10 hari pertama, sebagian terbooking -->
+            <tr>
+              <td>1 Juli</td>
+              <td>Terbooking</td>
+              <td>Andi</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>2 Juli</td>
+              <td>Terbooking</td>
+              <td>Siti</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>3 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="3" /></td>
+            </tr>
+            <tr>
+              <td>4 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="4" /></td>
+            </tr>
+            <tr>
+              <td>5 Juli</td>
+              <td>Terbooking</td>
+              <td>Bayu</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>6 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="6" /></td>
+            </tr>
+            <tr>
+              <td>7 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="7" /></td>
+            </tr>
+            <tr>
+              <td>8 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="8" /></td>
+            </tr>
+            <tr>
+              <td>9 Juli</td>
+              <td>Available</td>
+              <td>-</td>
+              <td><input type="checkbox" name="tanggal[]" value="9" /></td>
+            </tr>
+            <tr>
+              <td>10 Juli</td>
+              <td>Terbooking</td>
+              <td>Rina</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </form>
+
+  <script>
+    document.getElementById('submitLink').addEventListener('click', function (event) {
+      event.preventDefault();
+      window.location.href = 'bookingAlatMusik.html';
+    });
+  </script>
+</body>
+
+</html>

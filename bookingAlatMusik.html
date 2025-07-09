@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fusion | Booking Alat</title>
+  <link rel="stylesheet" href="css/styleHalaman.css" />
+</head>
+
+<body>
+  <main class="table">
+    <section class="table__header">
+      <h1>Booking Gitar Gibson Les Paul</h1>
+      <a href="home.html" class="btnn">Kembali</a>
+    </section>
+
+    <div class="body2">
+      <div class="container">
+        <form id="formBookingAlat" enctype="multipart/form-data">
+          <input type="hidden" name="email" value="user@example.com" />
+          <input type="hidden" name="kodeAlat" value="GB001" />
+
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Penyewa</span>
+              <input type="text" name="nama" value="John Doe" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Jenis Alat</span>
+              <input type="text" name="jenis" value="Gitar" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Nama Alat</span>
+              <input type="text" name="namaAlat" value="Gibson Les Paul" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Durasi Sewa</span>
+              <input type="text" name="durasi" value="3 hari" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Tanggal Pakai</span>
+              <input type="hidden" name="tgl_pakai" value="2025-07-10" readonly />
+              <input type="text" name="pake" value="10 Juli" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Tanggal Selesai</span>
+              <input type="hidden" name="tgl_selesai" value="2025-07-12" readonly />
+              <input type="text" name="kelar" value="12 Juli" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Total Harga</span>
+              <input type="text" name="total_harga" value="Rp225.000" readonly />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Bukti Pembayaran</span>
+              <input type="file" name="bukti_pembayaran" accept="image/*" required />
+            </div>
+
+            <div class="input-box">
+              <span class="details">Qris Studio</span>
+              <p></p>
+              <img src="img/qris.jpg" alt="Qris" style="width:300px; justify-content: center;" />
+            </div>
+          </div>
+
+          <div class="button">
+            <input type="button" onclick="window.location.href='sukses.html'" value="Booking" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
